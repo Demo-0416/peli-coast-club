@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f1e8" />
+    <meta name="description" content="一只鹈鹕，一辆自行车，一场没有终点的海岸漫游。来 Peli Coast Club，换个角度看世界。" />
+    <title>Peli Coast Club — Small wings. Big adventures.</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.9 13.1A8.5 8.5 0 0 1 10.9 3a8.5 8.5 0 1 0 10 10.1Z"/></symbol>
+      <symbol id="icon-volume" viewBox="0 0 24 24"><path d="m11 5-6 4H2v6h3l6 4V5Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+      <symbol id="icon-muted" viewBox="0 0 24 24"><path d="m11 5-6 4H2v6h3l6 4V5Zm5 4 5 6m0-6-5 6"/></symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z"/></symbol>
+      <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+      <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M8 5 6 8H3v12h18V8h-3l-2-3H8Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+      <symbol id="icon-view" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+      <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M5 16h14l-2-3V9a5 5 0 0 0-10 0v4l-2 3Zm5 3h4m-5-17h6M3 9H1m22 0h-2"/></symbol>
+      <symbol id="icon-sliders" viewBox="0 0 24 24"><path d="M4 7h7m4 0h5M4 17h3m4 0h9"/><circle cx="13" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+      <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="icon-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .5c0 1.5-2.5 1.5-2.5 3.5m0 3h.01"/></symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 3C10 3 4 7 4 14a6 6 0 0 0 6 6c7 0 10-7 10-17ZM3 21 15 9"/></symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+      <symbol id="icon-restart" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    </svg>
+
+    <main class="experience" id="experience">
+      <div id="scene" role="img" aria-label="一只围着绿色围巾的白色鹈鹕，骑着珊瑚色自行车，在海岸小岛上兜风。可拖动旋转视角。"></div>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="edge-shade" aria-hidden="true"></div>
+
+      <header class="header">
+        <a class="brand" href="#" aria-label="Peli Coast Club 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M14 32c-3-5-1-14 5-17 5-3 12-1 13 4l10 2-10 3c-1 5-5 7-9 5m-9 3c5-4 10-2 15 2m-13-8c-3 4-2 10 3 12m-2-21 2-6 3 5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="27" cy="17" r="1.2" fill="currentColor"/></svg>
+          </span>
+          <span class="brand-name">PELI<span>COAST CLUB</span></span>
+        </a>
+        <nav class="navigation" aria-label="主导航">
+          <button class="nav-link active" id="explore-nav"><span>01</span> 去漫游</button>
+          <button class="nav-link" id="journey-nav"><span>02</span> 旅行手账</button>
+          <button class="nav-link" id="about-nav"><span>03</span> 关于 Peli</button>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="切换至日落模式" title="日落模式 · D">
+            <svg class="icon"><use href="#icon-sun" /></svg><span id="theme-label">日落时分</span>
+          </button>
+          <button class="icon-button sound-button" id="sound-toggle" aria-label="开启环境音效" aria-pressed="false" title="环境音效 · M"><svg class="icon"><use href="#icon-muted" /></svg></button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow"><span class="little-line"></span> 逃离日常，第 001 号旅程</div>
+        <h1 id="hero-title">Small wings.<br />Big <em>adventures.</em></h1>
+        <p class="hero-copy">一只鹈鹕，一辆单车，和一整片未知的海岸。<br />不必飞得很快，沿途都是答案。</p>
+        <div class="hero-actions">
+          <button class="ride-button" id="ride-button"><span>一起去兜风</span><svg class="icon"><use href="#icon-arrow" /></svg></button>
+          <span class="ride-note">零碳出行<br /><strong>全靠一双小短腿</strong></span>
+        </div>
+        <div class="drag-hint"><span class="mouse-symbol" aria-hidden="true"><i></i></span><span>拖动画面，发现另一面</span></div>
+      </section>
+
+      <div class="scene-note" aria-hidden="true"><span>Meet your<br />unlikely explorer.</span><svg viewBox="0 0 120 65"><path d="M5 9c31-10 31 30 61 24 17-3 24-12 38-19m-13 3 14-4-1 15"/></svg></div>
+      <button class="back-button" id="back-button"><span>←</span> 返回海岸</button>
+      <div class="immersive-caption" aria-live="polite"><span class="live-dot"></span> THE SCENIC ROUTE <strong>慢慢来，风景都在路上。</strong></div>
+      <div class="coordinates" aria-hidden="true">34° 01′ N <span>—</span> 118° 49′ W</div>
+
+      <div class="loading-screen" id="loading-screen">
+        <span class="loading-bird">P.</span><span>正在给 Peli 的轮胎打气</span><div class="loading-track"><i></i></div>
+      </div>
+      <div class="scene-error" id="scene-error" hidden><h2>这趟旅程需要一点 3D 魔法</h2><p>请使用支持 WebGL 的浏览器，并开启硬件加速。</p><button id="reload-button">重新出发 ↗</button></div>
+
+      <section class="journey-bar" aria-label="骑行控制台">
+        <div class="weather-card">
+          <div class="weather-icon"><svg class="icon"><use href="#icon-sun" /></svg></div>
+          <div><div class="weather-reading"><span id="temperature">24°</span><span class="weather-description" id="weather-description">海风轻柔，适合出发</span></div><div class="micro-label">PACIFIC COAST <span>/</span> ROUTE 07</div></div>
+        </div>
+
+        <div class="control-dock">
+          <button class="play-button" id="play-toggle" aria-label="暂停骑行" aria-pressed="true" title="骑行 / 暂停 · 空格"><svg class="icon"><use href="#icon-pause" /></svg></button>
+          <div class="speed-control"><button id="slower-button" aria-label="降低骑速" title="慢一点"><svg class="icon"><use href="#icon-minus" /></svg></button><div><span class="speed-number" id="speed-number">1.0<span>×</span></span><span class="speed-label">巡航速度</span></div><button id="faster-button" aria-label="提高骑速" title="快一点"><svg class="icon"><use href="#icon-plus" /></svg></button></div>
+          <span class="dock-divider"></span>
+          <button class="dock-button" id="camera-toggle" title="切换镜头 · C" aria-label="切换镜头"><svg class="icon"><use href="#icon-view" /></svg></button>
+          <button class="dock-button" id="bell-button" title="按一下车铃 · B" aria-label="按一下车铃"><svg class="icon"><use href="#icon-bell" /></svg></button>
+          <button class="dock-button" id="snapshot-button" title="收藏这一刻" aria-label="保存 3D 场景照片"><svg class="icon"><use href="#icon-camera" /></svg></button>
+          <button class="dock-button" id="settings-toggle" title="漫游设置" aria-label="打开漫游设置" aria-expanded="false"><svg class="icon"><use href="#icon-sliders" /></svg></button>
+        </div>
+
+        <div class="view-indicator"><span class="micro-label">YOUR POINT OF VIEW</span><div><span id="camera-name">海岸漫游</span><span class="view-number" id="camera-number">01 / 03</span></div><div class="view-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div></div>
+      </section>
+
+      <section class="settings-panel" id="settings-panel" aria-label="漫游设置" hidden>
+        <div class="panel-heading"><div><span class="micro-label">MAKE IT YOURS</span><h2>漫游偏好</h2></div><button class="icon-button" id="settings-close" aria-label="关闭设置"><svg class="icon"><use href="#icon-close" /></svg></button></div>
+        <label class="setting-range" for="speed-range"><span>骑行速度</span><output id="speed-output">1.0×</output></label>
+        <input id="speed-range" type="range" min="0.4" max="2" step="0.1" value="1" />
+        <div class="range-labels"><span>慢慢欣赏</span><span>追风而去</span></div>
+        <div class="setting-row"><span>自动环绕镜头<small>坐着也能看世界</small></span><button class="switch" id="orbit-toggle" role="switch" aria-checked="false" aria-label="自动环绕镜头"><span></span></button></div>
+        <div class="setting-row"><span>轻柔动态效果<small>照顾容易晕动的你</small></span><button class="switch" id="motion-toggle" role="switch" aria-checked="false" aria-label="轻柔动态效果"><span></span></button></div>
+        <div class="setting-row"><span>环境音量<small>海浪、微风和一点点自由</small></span><input class="volume-range" id="volume-range" aria-label="环境音量" type="range" min="0" max="1" step="0.05" value="0.45" /></div>
+        <button class="reset-button" id="reset-button"><svg class="icon"><use href="#icon-restart" /></svg> 重置这次漫游</button>
+      </section>
+
+      <footer class="footer">
+        <span class="footer-motto"><svg class="icon"><use href="#icon-leaf" /></svg> POWERED BY PEDALS & GOOD VIBES</span>
+        <span class="keyboard-hint"><kbd>SPACE</kbd> 暂停 <span>·</span> <kbd>C</kbd> 换镜头 <span>·</span> 点一点 Peli 打个招呼</span>
+        <div class="footer-actions"><span>NO RUSH. JUST RIDE.</span><button class="icon-button" id="fullscreen-button" aria-label="进入全屏" title="全屏漫游 · F"><svg class="icon"><use href="#icon-expand" /></svg></button><button class="icon-button help-button" id="help-button" aria-label="查看操作指南" title="操作指南"><svg class="icon"><use href="#icon-help" /></svg></button></div>
+      </footer>
+      <div class="toast" id="toast" role="status"><svg class="icon"><use href="#icon-check" /></svg><span></span></div>
+      <div class="photo-flash" aria-hidden="true"></div>
+    </main>
+
+    <dialog class="story-dialog" id="story-dialog">
+      <button class="dialog-close icon-button" id="dialog-close" aria-label="关闭弹窗"><svg class="icon"><use href="#icon-close" /></svg></button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
